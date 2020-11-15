@@ -10,7 +10,7 @@
     <form action="/insert" method="post">
         <?php echo csrf_field() ?>
         <p><input type="text" name="name" placeholder="Enter Student Name"></p>
-        <p><input type="text" name="email" placeholder="Enter Email"></p>
+        <!-- <p><input type="text" name="email" placeholder="Enter Email"></p> -->
         <p><input type="submit" name="submit"></p>
 
     </form>

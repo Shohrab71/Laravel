@@ -112,6 +112,32 @@ class requestController extends Controller
      
 
 
+     public function getquery3()
+     {
+            $data=DB::table('students')->insert([['name' => 'Masud Alam', 'email' => 'masud@w3prorammers.com'], ['name' => 'Amena Khatun', 'email' => 'amena@gmail.com']]);
+    
+            echo $data?"Insert Success":"Data Insert Fail";
+     }
+
+
+     public function insert_getid()
+     {  
+
+        $id = DB::table('students')->insertGetId(['name' => 'Zaman','email' => 'zaman@gamil.com']);
+ 
+       echo "Your Last Inserted Id:". $id;
+         
+     }
+
+
+     public function updatedata()
+     {
+         $data = DB::table('students')->delete();
+
+
+         echo $data?"Updated successfull":"Update Failed";
+     }
+
 
 }
 
