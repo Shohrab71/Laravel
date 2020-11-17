@@ -15,7 +15,7 @@
     @php
         echo csrf_field();
     @endphp
-    <input type="submit" name="submit" value="Submit">
+    <input type="submit" name="submit" value="Add Item">
 </form>
 </body>
 </html>
